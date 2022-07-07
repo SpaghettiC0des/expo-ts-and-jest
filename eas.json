@@ -25,10 +25,7 @@
         "extends": "base",
         "developmentClient": true,
         "distribution": "internal",
-        "releaseChannel": "default",
-        "android": {
-          "buildType": "apk"
-        }
+        "releaseChannel": "default"
       },
       "production": {
         "extends": "base",
