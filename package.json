@@ -15,8 +15,9 @@
     "eject": "expo eject",
     "prepare": "husky install",
     "reset-watchman": "watchman watch-del . ; watchman watch-project .",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand"
   },
   "dependencies": {
     "@react-native-community/netinfo": "8.2.0",
