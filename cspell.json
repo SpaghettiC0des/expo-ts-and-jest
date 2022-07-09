@@ -2,9 +2,10 @@
   "version": "0.2",
   "language": "en",
   "words": [
-    "karlmarxlopez",
     "commitlint",
-    "devclient"
+    "devclient",
+    "karlmarxlopez",
+    "myappname"
   ],
   "ignorePaths": [
     "patches/**/*",
