@@ -19,7 +19,10 @@ const untranspiledModulePatterns = [
 
 module.exports = {
   preset: 'jest-expo',
-  setupFiles: ['<rootDir>/jest/setup.js'],
+  setupFiles: [
+    '<rootDir>/jest/setup.js',
+    '<rootDir>/node_modules/react-native-gesture-handler/jestSetup.js',
+  ],
   transformIgnorePatterns: [
     `node_modules/(?!${untranspiledModulePatterns.join('|')})`,
   ],
