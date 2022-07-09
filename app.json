@@ -23,7 +23,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.updatethis.bundleid"
+      "bundleIdentifier": "com.kml.expo.playground"
     },
     "android": {
       "adaptiveIcon": {
@@ -33,7 +33,7 @@
       "permissions": [
         "android.permission.RECORD_AUDIO"
       ],
-      "package": "com.updatethis.bundleid"
+      "package": "com.kml.expo.playground"
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -4,9 +4,7 @@
   "words": [
     "karlmarxlopez",
     "commitlint",
-    "bundleid",
-    "devclient",
-    "updatethis"
+    "devclient"
   ],
   "ignorePaths": [
     "patches/**/*",
