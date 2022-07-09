@@ -1,4 +1,6 @@
-# Expo TypeScript Template
+# @karlmarxlopez/expo-ts-and-jest
+
+TODO! Provide a better readme
 
 Includes
 
