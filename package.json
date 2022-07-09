@@ -14,7 +14,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "prepare": "husky install",
-    "reset-watchman": "watchman watch-del .. ; watchman watch-project ..",
+    "reset-watchman": "watchman watch-del . ; watchman watch-project .",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
