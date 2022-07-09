@@ -1,5 +1,8 @@
 {
   "expo": {
+    "plugins": [
+      ["expo-community-flipper", "0.152.0"]
+    ],
     "jsEngine": "hermes",
     "name": "expo-ts-and-jest",
     "slug": "expo-ts-and-jest",
