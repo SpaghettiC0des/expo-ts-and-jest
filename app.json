@@ -20,7 +20,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.iamkarlmarx.expornplayground"
+      "bundleIdentifier": "com.updatethis.bundleid"
     },
     "android": {
       "adaptiveIcon": {
@@ -30,7 +30,7 @@
       "permissions": [
         "android.permission.RECORD_AUDIO"
       ],
-      "package": "com.iamkarlmarx.expornplayground"
+      "package": "com.updatethis.bundleid"
     },
     "web": {
       "favicon": "./assets/favicon.png"
