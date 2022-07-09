@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import 'react-native-gesture-handler/jestSetup';
 
 jest.mock('react-native-reanimated', () => {

@@ -12,6 +12,14 @@
   "overrides": [
     {
       "files": [
+        "jest/*"
+      ],
+      "env": {
+        "jest/globals": true
+      }
+    },
+    {
+      "files": [
         "*.ts",
         "*.tsx"
       ],
