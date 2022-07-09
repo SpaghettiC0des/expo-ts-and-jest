@@ -57,6 +57,7 @@
     "@types/react-test-renderer": "17",
     "babel-plugin-module-resolver": "4.1.0",
     "babel-plugin-transform-remove-console": "6.9.4",
+    "cspell": "6.2.3",
     "eslint": "7",
     "eslint-import-resolver-typescript": "3.1.0",
     "eslint-plugin-import": "2.26.0",
@@ -69,8 +70,9 @@
     "typescript": "~4.3.5"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{ts,tsx,js,css,md}": "prettier --write",
+    "*": "cspell lint --no-summary *"
   },
   "resolutions": {
     "@types/react": "~17.0.21"

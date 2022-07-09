@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "karlmarxlopez",
+    "commitlint",
+    "bundleid",
+    "devclient",
+    "updatethis"
+  ],
+  "ignorePaths": [
+    "patches/**/*",
+    ".gitignore",
+    "jest/",
+    "jest.config.js",
+    "node_modules/**",
+    "yarn-error.log",
+    "*.lock",
+    "package.json"
+  ]
+}
