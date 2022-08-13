@@ -1,7 +1,7 @@
 {
   "expo": {
     "plugins": [
-      ["expo-community-flipper", "0.152.0"]
+      ["expo-community-flipper", "0.158.0"]
     ],
     "jsEngine": "hermes",
     "name": "expo-ts-and-jest",
