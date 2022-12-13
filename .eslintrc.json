@@ -6,27 +6,18 @@
     "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "jest/globals": true
+  },
   "overrides": [
     {
-      "files": [
-        "jest/*"
-      ],
-      "env": {
-        "jest/globals": true
-      }
+      "files": ["jest/*"]
     },
     {
-      "files": [
-        "*.ts",
-        "*.tsx"
-      ],
+      "files": ["*.ts", "*.tsx"],
       "rules": {
-        "@typescript-eslint/no-shadow": [
-          "error"
-        ],
+        "@typescript-eslint/no-shadow": ["error"],
         "no-shadow": "off",
         "no-undef": "off"
       }
@@ -62,11 +53,7 @@
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal"
-        ],
+        "groups": ["builtin", "external", "internal"],
         "pathGroups": [
           {
             "pattern": "react",
@@ -74,9 +61,7 @@
             "position": "before"
           }
         ],
-        "pathGroupsExcludedImportTypes": [
-          "react"
-        ],
+        "pathGroupsExcludedImportTypes": ["react"],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",

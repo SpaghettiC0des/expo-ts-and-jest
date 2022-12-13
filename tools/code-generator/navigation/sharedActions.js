@@ -7,7 +7,7 @@ const newNavigatorConstant = navigatorTypeSuffix => {
   return {
     type: 'append',
     pattern: '__CODE_GENERATOR__',
-    path: 'src/constants/navigation/navigators.ts',
+    path: 'src/constants/navigators.ts',
     template: `  {{pascalCase navigatorName}}${
       navigatorTypeSuffix ? `{{pascalCase '${navigatorTypeSuffix}'}}` : ''
     } = '{{pascalCase navigatorName}}Navigator',`,
@@ -32,7 +32,7 @@ const appendNewScreenNameConstant = navigatorType => {
   return {
     type: 'append',
     pattern: '__CODE_GENERATOR__',
-    path: 'src/constants/navigation/screens.ts',
+    path: 'src/constants/screens.ts',
     template: template.join('\n'),
   };
 };
