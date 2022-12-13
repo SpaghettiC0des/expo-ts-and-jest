@@ -6,6 +6,7 @@ import {Navigators, Screens} from '@src/constants';
 import {ForgotPasswordScreen, SignInScreen, SignUpScreen} from '@src/screens';
 import {WelcomeScreen} from '@src/screens/Welcome';
 
+// __CODE_GENERATOR_IMPORTS__
 import type {AuthStackParamList} from './types';
 
 const {Navigator, Screen} = createStackNavigator<AuthStackParamList>();

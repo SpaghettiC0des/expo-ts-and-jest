@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Navigators, Screens} from '@src/constants';
 import {HomeScreen} from '@src/screens';
 
+// __CODE_GENERATOR_IMPORTS__
 import type {MainStackParamList} from './types';
 
 const {Navigator, Screen} = createStackNavigator<MainStackParamList>();

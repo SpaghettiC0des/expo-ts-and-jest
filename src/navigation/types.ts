@@ -6,7 +6,9 @@ import type {StackScreenProps} from '@react-navigation/stack';
 
 import {Navigators, Screens} from '@src/constants';
 
+// __PARAMS_LIST__
 export type AuthStackParamList = {
+  // __AUTH_STACK__
   [Screens.Welcome]: undefined;
   [Screens.SignIn]: undefined;
   [Screens.SignUp]: undefined;
@@ -14,14 +16,17 @@ export type AuthStackParamList = {
 };
 
 export type MainStackParamList = {
+  // __MAIN_STACK__
   [Screens.Home]: undefined;
 };
 
 export type RootStackParamList = {
+  // __ROOT_STACK__
   [Navigators.AuthStack]?: NavigatorScreenParams<AuthStackParamList>;
   [Navigators.MainStack]?: NavigatorScreenParams<MainStackParamList>;
 };
 
+// __STACK_SCREEN_PROPS__
 export type RootStackScreenProps<T extends keyof RootStackParamList> =
   StackScreenProps<RootStackParamList, T>;
 
