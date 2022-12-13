@@ -1,8 +1,6 @@
 {
   "expo": {
-    "plugins": [
-      ["expo-community-flipper", "0.166.0"]
-    ],
+    "plugins": [["expo-community-flipper", "0.176.0"]],
     "jsEngine": "hermes",
     "name": "expo-ts-and-jest",
     "slug": "expo-ts-and-jest",
@@ -18,9 +16,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.kml.expo.playground"
@@ -30,9 +26,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "permissions": [
-        "android.permission.RECORD_AUDIO"
-      ],
+      "permissions": ["android.permission.RECORD_AUDIO"],
       "package": "com.kml.expo.playground"
     },
     "web": {
