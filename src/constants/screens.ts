@@ -5,9 +5,3 @@ export enum Screens {
   Welcome = 'WelcomeScreen',
   Home = 'HomeScreen',
 }
-
-export enum Navigators {
-  MainStack = 'MainStackNavigator',
-  RootStack = 'RootStackNavigator',
-  AuthStack = 'AuthStackNavigator',
-}

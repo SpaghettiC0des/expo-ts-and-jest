@@ -1,0 +1,5 @@
+export type {{pascalCase navigatorName}}StackScreenProps<T extends keyof {{pascalCase navigatorName}}StackParamList> =
+  CompositeScreenProps<
+    StackScreenProps<{{pascalCase navigatorName}}StackParamList, T>,
+    {{parentNavigator}}ScreenProps<keyof {{parentNavigator}}ParamList>
+  >;

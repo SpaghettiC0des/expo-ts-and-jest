@@ -8,6 +8,7 @@
     "myappname"
   ],
   "ignorePaths": [
+    "tools/",
     "_gitignore",
     "patches/**/*",
     ".gitignore",

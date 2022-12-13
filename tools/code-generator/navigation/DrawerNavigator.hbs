@@ -1,0 +1,21 @@
+import React from 'react';
+
+import {createDrawerNavigator} from '@react-navigation/drawer';
+
+import {Navigators, Screens} from '@src/constants';
+
+function HomeScreen() {
+    return null;
+}
+
+// __CODE_GENERATOR_IMPORTS__
+import type {{preCurly (pascalCase navigatorName)}}ParamList} from './types';
+
+const {Navigator, Screen} = createDrawerNavigator<{{pascalCase navigatorName}}ParamList>();
+
+export const {{pascalCase navigatorName}}Navigator = () => (
+  <Navigator id={Navigators.{{pascalCase navigatorName}}{{append '' '}'}}>
+    {/* __CODE_GENERATOR__ */}
+    <Screen component={HomeScreen} name={Screens.Home} />
+  </Navigator>
+);

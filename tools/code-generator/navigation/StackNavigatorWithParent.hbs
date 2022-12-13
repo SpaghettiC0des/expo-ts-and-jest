@@ -1,0 +1,17 @@
+import React from 'react';
+
+import {createStackNavigator} from '@react-navigation/stack';
+
+import {Navigators, Screens} from '@src/constants';
+import {{preCurly (pascalCase navigatorName)}}HomeScreen} from '@src/screens';
+
+import type {{preCurly (pascalCase parentNavigator)}}ParamList{{append '' '}'}} from './types';
+
+const {Navigator, Screen} = createStackNavigator<{{parentNavigator}}ParamList>();
+
+export const {{pascalCase navigatorName}}StackNavigator = () => (
+  <Navigator id={Navigators.{{pascalCase navigatorName}}Stack}>
+    {/* __CODE_GENERATOR__ */}
+    <Screen component={{preCurly (pascalCase navigatorName) }}HomeScreen{{append '' '}'}} name={Screens.{{pascalCase navigatorName}}Home} />
+  </Navigator>
+);

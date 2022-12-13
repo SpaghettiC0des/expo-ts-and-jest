@@ -1,0 +1,14 @@
+import React from 'react';
+
+import {View, Text} from 'react-native';
+
+import {Screens} from '@src/constants';
+import {{preCurly parentNavigator}}ScreenProps{{append '' '}'}} from '@src/navigation/types';
+
+export const {{pascalCase screenName}}Screen = (_: {{pascalCase parentNavigator}}ScreenProps<Screens.{{pascalCase screenName}}>) => {
+  return (
+    <View>
+      <Text>{{pascalCase screenName}}Screen</Text>
+    </View>
+  );
+};

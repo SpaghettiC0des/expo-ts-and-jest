@@ -1,0 +1,9 @@
+import {View{{#if withStyles}}, StyleSheet{{/if}}{{append '' '}'}} from 'react-native';
+
+export const {{pascalCase componentName}} = () => <View {{#if withStyles}}style={styles.container}{{/if}} />;
+
+{{#if withStyles}}
+const styles = StyleSheet.create({
+  container: {},
+});
+{{/if}}
