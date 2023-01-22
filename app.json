@@ -1,6 +1,5 @@
 {
   "expo": {
-    "plugins": [["expo-community-flipper", "0.176.0"]],
     "jsEngine": "hermes",
     "name": "expo-ts-and-jest",
     "slug": "expo-ts-and-jest",
@@ -14,6 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
+      "enabled": true,
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": ["**/*"],
