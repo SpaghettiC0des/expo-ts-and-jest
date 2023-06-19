@@ -1,39 +1,39 @@
 {
-    "cli": {
-      "version": ">= 0.54.1"
+  "cli": {
+    "version": ">= 3.13.3"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal"
     },
-    "build": {
-      "preview": {
-        "distribution": "internal"
+    "base": {
+      "env": {}
+    },
+    "devClient": {
+      "extends": "base",
+      "channel": "dev",
+      "distribution": "internal",
+      "developmentClient": true,
+      "android": {
+        "buildType": "apk"
       },
-      "base": {
-        "env": {}
-      },
-      "devClient": {
-        "extends": "base",
-        "releaseChannel": "default",
-        "distribution": "internal",
-        "developmentClient": true,
-        "android": {
-          "buildType": "apk"
-        },
-        "ios": {
-          "simulator": true
-        }
-      },
-      "development": {
-        "extends": "base",
-        "developmentClient": true,
-        "distribution": "internal",
-        "releaseChannel": "default"
-      },
-      "production": {
-        "extends": "base",
-        "distribution": "store",
-        "releaseChannel": "stable",
-        "android": {
-          "buildType": "app-bundle"
-        }
+      "ios": {
+        "simulator": true
       }
+    },
+    "development": {
+      "extends": "base",
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "dev"
+    },
+    "production": {
+      "extends": "base",
+      "distribution": "store",
+      "channel": "prod"
     }
+  },
+  "submit": {
+    "production": {}
   }
+}
