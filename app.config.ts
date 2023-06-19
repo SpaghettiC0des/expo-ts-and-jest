@@ -1,6 +1,8 @@
+import {ExpoConfig} from '@expo/config';
+
 import packageJson from './package.json';
 
-const plugins: any = [];
+const plugins: ExpoConfig['plugins'] = [];
 
 if (process.env.EAS_BUILD_PROFILE === 'devClient') {
   // exclude Flipper from non-devClient builds
@@ -12,10 +14,9 @@ if (process.env.EAS_BUILD_PROFILE === 'devClient') {
   ]);
 }
 
-const config = {
-  expo: {
-    plugins,
-  },
-};
+const getConfig = ({config}: {config: ExpoConfig}) => ({
+  ...config,
+  plugins,
+});
 
-export default config;
+export default getConfig;
