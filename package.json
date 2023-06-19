@@ -35,7 +35,7 @@
     "react": "18.2.0",
     "react-devtools-core": "4.26.1",
     "react-dom": "18.2.0",
-    "react-native": "0.71.3",
+    "react-native": "0.71.8",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-mmkv": "^2.5.1",
     "react-native-reanimated": "~2.14.4",
