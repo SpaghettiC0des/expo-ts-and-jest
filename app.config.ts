@@ -1,18 +1,15 @@
 import {ExpoConfig} from '@expo/config';
 
-import packageJson from './package.json';
-
-const plugins: ExpoConfig['plugins'] = [];
-
-if (process.env.EAS_BUILD_PROFILE === 'devClient') {
-  // exclude Flipper from non-devClient builds
-  // to prevent build errors
-  plugins.push([
-    'expo-community-flipper',
-    // match whatever version of react-native-flipper you have installed
-    packageJson.devDependencies['react-native-flipper'],
-  ]);
-}
+const plugins: ExpoConfig['plugins'] = [
+  [
+    'expo-build-properties',
+    {
+      ios: {
+        flipper: process.env.EAS_BUILD_PROFILE === 'devClient',
+      },
+    },
+  ],
+];
 
 const getConfig = ({config}: {config: ExpoConfig}) => ({
   ...config,
