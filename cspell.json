@@ -1,12 +1,8 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "commitlint",
-    "devclient",
-    "karlmarxlopez",
-    "myappname"
-  ],
+  "words": ["commitlint", "devclient", "karlmarxlopez", "myappname"],
+  "useGitignore": true,
   "ignorePaths": [
     "tools/",
     "_gitignore",
@@ -17,6 +13,8 @@
     "node_modules/**",
     "yarn-error.log",
     "*.lock",
-    "package.json"
+    "package.json",
+    ".prettierrc.json",
+    ".eslintignore"
   ]
 }
