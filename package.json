@@ -1,7 +1,7 @@
 {
   "name": "@karlmarxlopez/expo-ts-and-jest",
   "description": "Expo with TypeScript and Jest",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "main": "node_modules/expo/AppEntry.js",
   "publishConfig": {
