@@ -58,7 +58,7 @@ module.exports = function (
         {
           type: 'append',
           pattern: '__CODE_GENERATOR__',
-          path: 'src/constants/navigation/screens.ts',
+          path: 'src/constants/screens.ts',
           template:
             "  {{pascalCase screenName}} = '{{pascalCase screenName}}Screen',",
         },
