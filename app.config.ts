@@ -5,7 +5,7 @@ const plugins: ExpoConfig['plugins'] = [
     'expo-build-properties',
     {
       ios: {
-        flipper: process.env.EAS_BUILD_PROFILE === 'devClient',
+        flipper: false,
       },
     },
   ],
