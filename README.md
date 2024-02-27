@@ -1,4 +1,4 @@
-# @karlmarxlopez/expo-ts-and-jest
+# @SpaghettiC0des/expo-ts-and-jest
 
 TODO! Provide a better readme
 
